@@ -108,7 +108,6 @@ div.flex-list {
     gap: 10px;
     padding-bottom: 10px;
 }
-
 pre,
 :not(pre) > code,
 div.card {
@@ -124,8 +123,17 @@ div.card {
     padding: 20px;
 }
 
-pre {
-    padding: 15px;
+pre,
+pre > code {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+pre:not(.shiki):not(:has(.shiki)),
+pre > code > pre {
+    padding: 10px;
+    border: 1px solid hsl(248, 21%, 13%);
 }
 
 :not(pre) > code {
