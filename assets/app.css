@@ -28,7 +28,8 @@ body {
     color: white;
 }
 
-main {
+main,
+footer {
     max-width: 1024px;
     margin: auto;
     display: flex;
@@ -145,4 +146,24 @@ pre {
     b {
         color: #aaa;
     }
+}
+
+hr {
+    align-self: stretch;
+    width: 100%;
+    border-color: #aaa;
+    border-width: 0.5px;
+}
+
+footer,
+footer a {
+    color: #aaa;
+}
+
+footer {
+    margin-top: 1em;
+}
+
+pre {
+    overflow-x: auto;
 }
