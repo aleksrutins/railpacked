@@ -1,0 +1,8 @@
+<div class="card">
+    <h2>
+        <a [href]='string:concat("/recipes/", recipe, ".html")' class="card"
+            >{{title}}</a
+        >
+    </h2>
+    <p><slot></slot></p>
+</div>

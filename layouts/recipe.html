@@ -1,0 +1,9 @@
+<extends template="layouts/base.html" [title]="title"></extends>
+
+<main>
+    <a href="/" style="padding-top: 20px">All Recipes</a>
+    <h1>{{title}}</h1>
+    <recipe-meta [base]="base" [author]="author"></recipe-meta>
+    <hr />
+    <slot></slot>
+</main>

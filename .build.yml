@@ -1,0 +1,19 @@
+image: archlinux
+packages:
+  - hut
+  - pixi
+
+oauth: pages.sr.ht/PAGES:RW
+environment:
+  site: railpacked.farthergate.com
+  repo: railpacked
+
+tasks:
+  - build: |
+      cd $repo
+      pixi run build
+  - package: |
+      cd $repo/_build/pages
+      tar -cvz . > ../../../site.tar.gz
+  - upload: |
+      hut pages publish -d $site site.tar.gz
