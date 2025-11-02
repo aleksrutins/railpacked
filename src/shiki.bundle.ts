@@ -10,12 +10,25 @@ import {
 } from '@shikijs/core'
 import { createJavaScriptRegexEngine } from '@shikijs/engine-javascript'
 
-type BundledLanguage = 'json'
+type BundledLanguage =
+  | 'json'
+  | 'perl'
+  | 'shellscript'
+  | 'bash'
+  | 'sh'
+  | 'shell'
+  | 'zsh'
 type BundledTheme = 'rose-pine'
 type Highlighter = HighlighterGeneric<BundledLanguage, BundledTheme>
 
 const bundledLanguages = {
   json: () => import('@shikijs/langs/json'),
+  perl: () => import('@shikijs/langs/perl'),
+  shellscript: () => import('@shikijs/langs/shellscript'),
+  bash: () => import('@shikijs/langs/shellscript'),
+  sh: () => import('@shikijs/langs/shellscript'),
+  shell: () => import('@shikijs/langs/shellscript'),
+  zsh: () => import('@shikijs/langs/shellscript'),
 } as Record<BundledLanguage, DynamicImportLanguageRegistration>
 
 const bundledThemes = {
