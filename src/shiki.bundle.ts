@@ -18,7 +18,7 @@ type BundledLanguage =
   | 'sh'
   | 'shell'
   | 'zsh'
-type BundledTheme = 'rose-pine'
+type BundledTheme = 'rose-pine' | 'rose-pine-dawn'
 type Highlighter = HighlighterGeneric<BundledLanguage, BundledTheme>
 
 const bundledLanguages = {
@@ -33,6 +33,7 @@ const bundledLanguages = {
 
 const bundledThemes = {
   'rose-pine': () => import('@shikijs/themes/rose-pine'),
+  'rose-pine-dawn': () => import('@shikijs/themes/rose-pine-dawn'),
 } as Record<BundledTheme, DynamicImportThemeRegistration>
 
 const createHighlighter = /* @__PURE__ */ createdBundledHighlighter<
