@@ -90,8 +90,7 @@ input {
     padding: 0.5rem 0.75rem;
     line-height: 1.5rem;
     display: block;
-    align-self: center;
-    max-width: 20vw;
+    align-self: stretch;
 }
 
 form {
@@ -174,4 +173,11 @@ footer {
 
 pre {
     overflow-x: auto;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
 }

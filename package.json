@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "fuse.js": "^7.1.0",
     "shiki": "^3.14.0"
   }
 }

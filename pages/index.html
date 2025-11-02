@@ -1,8 +1,14 @@
 <extends template="layouts/base.html" title="Home"></extends>
 
-<main>
+<main class="list">
     <h1>Railpack Cookbook</h1>
-    <recipe-link recipe="mojolicious" title="Mojolicious">
-        A Perl web framework.
-    </recipe-link>
+    <input id="searchBar" placeholder="Search" />
+    <div id="recipes" class="list">
+        <recipe-link recipe="mojolicious" title="Mojolicious">
+            A Perl web framework.
+        </recipe-link>
+        <recipe-link recipe="mojolicious" title="Test">
+            A Perl web framework.
+        </recipe-link>
+    </div>
 </main>
