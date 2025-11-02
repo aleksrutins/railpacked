@@ -10,7 +10,7 @@ Mojolicious is a Perl web framework. This will deploy a full Mojolicious app; fo
 {
   "deploy": {
     "aptPackages": ["perl", "libmojolicious-perl"],
-    "startCommand": "perl src/scripts/* daemon -m production -l 'http://*:3000'",
+    "startCommand": "perl src/script/* daemon -m production -l 'http://*:3000'",
     "inputs": [
       {
         "local": true,
