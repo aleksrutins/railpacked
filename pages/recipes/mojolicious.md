@@ -4,7 +4,7 @@
   base="None"
   author="aleks"></extends>
 
-Mojolicious is a Perl web framework. This will deploy a full Mojolicious app; for `Mojo::Lite`, replace `src/scripts/*` with your entrypoint.
+Mojolicious is a Perl web framework. This will deploy a full Mojolicious app; for `Mojolicious::Lite`, replace `src/scripts/*` with your entrypoint.
 
 ```json
 {
