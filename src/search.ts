@@ -14,8 +14,11 @@ if (searchBar && recipes) {
   const fuse = new Fuse(items, { keys: ["title", "desc"] });
 
   searchBar.addEventListener("keyup", () => {
-    if (searchBar.value.trim() == "") return;
-    const results = fuse.search(searchBar.value).map((it) => it.item.el);
-    recipes.replaceChildren(...results);
+    if (searchBar.value.trim() == "")
+      recipes.replaceChildren(...items.map((it) => it.el));
+    else
+      recipes.replaceChildren(
+        ...fuse.search(searchBar.value).map((it) => it.item.el),
+      );
   });
 }
