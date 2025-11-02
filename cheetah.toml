@@ -2,4 +2,4 @@
 name = "bundle"
 during = "PreBuild"
 dev = { Watch = ["src/**/*.ts"] }
-command = "bun build src/app.ts --outfile assets/app.bundle.js"
+command = "bun build src/app.ts --minify --outfile assets/app.bundle.js"
