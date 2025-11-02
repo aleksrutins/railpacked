@@ -181,3 +181,14 @@ pre {
     align-items: stretch;
     gap: 10px;
 }
+
+recipe-link {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+
+    &,
+    > div.card {
+        flex: 1;
+    }
+}
