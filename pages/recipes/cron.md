@@ -4,7 +4,7 @@
   base="Shell Script"
   author="aleks"></extends>
 
-This template allows you to run cron jobs with the `Schedule::Cron` Perl package. `mcron` is also a good utility, but `Schedule::Cron` leads to a faster build and a smaller result image.
+This template allows you to run cron jobs with the `Schedule::Cron` Perl package. `mcron` can also be used, but `Schedule::Cron` leads to a faster build and a smaller result image.
 
 `railpack.json`
 ```json
