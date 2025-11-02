@@ -11,6 +11,7 @@ environment:
 tasks:
   - build: |
       cd $repo
+      pixi run bun install
       pixi run build
   - package: |
       cd $repo/_build/pages
