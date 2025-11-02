@@ -45,5 +45,6 @@ $cron->run(detach=>0);
 
 `myscript.bash`
 ```bash
+#!/usr/bin/env bash
 echo Hello World!
 ```
