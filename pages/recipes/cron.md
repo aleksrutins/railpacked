@@ -10,7 +10,7 @@ This template allows you to run cron jobs with the `Schedule::Cron` Perl package
 ```json
 {
   "deploy": {
-    "aptPackages": ["perl", "libschedule-cron-perl", "git"]
+    "aptPackages": ["perl", "libschedule-cron-perl"]
   }
 }
 ```
