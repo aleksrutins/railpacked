@@ -5,3 +5,4 @@ pandoc = "latest"
 
 [tasks]
 build = "ionian build"
+deps = "bun i"

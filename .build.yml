@@ -12,6 +12,7 @@ tasks:
   - build: |
       cd $repo
       mise i
+      mise run deps
       mise run build
   - package: |
       cd $repo/_build
