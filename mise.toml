@@ -1,8 +1,9 @@
 [tools]
 bun = "latest"
 pandoc = "latest"
-"ubi:aleksrutins/ionian" = "0.1.2"
+"ubi:aleksrutins/ionian" = "0.2.0"
 
 [tasks]
 build = "ionian build"
+dev = "ionian dev"
 deps = "bun i"
