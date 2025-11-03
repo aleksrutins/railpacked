@@ -16,6 +16,6 @@ tasks:
       mise run build
   - package: |
       cd $repo/_build
-      tar -cvz . > ../../../site.tar.gz
+      tar -cvz . > ../../site.tar.gz
   - upload: |
       hut pages publish -d $site site.tar.gz
