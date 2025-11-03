@@ -1,0 +1,22 @@
+{% macro link(recipe, title, desc) %}
+<div class="card">
+    <h2>
+        <a href="/recipes/{{recipe}}.html" class="card"
+            >{{title}}</a
+        >
+    </h2>
+    <p>{{desc}}</p>
+</div>
+{% endmacro %}
+
+{% macro meta(base, author) %}
+<div class="recipe-meta">
+    <b>Base Provider</b>
+    <p>{{base}}</p>
+
+    <b>Author</b>
+    <a href='https://railway.com/u/{{author}}'
+        >@{{author}}</a
+    >
+</div>
+{% endmacro %}

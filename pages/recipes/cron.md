@@ -1,8 +1,9 @@
-<extends
-  template="layouts/recipe.html"
-  title="Cron"
-  base="Shell Script"
-  author="aleks"></extends>
+{% block base %}Shell Script{% endblock base %}
+{% block author %}aleks{% endblock author %}
+{% block title %}Mojolicious{% endblock title %}
+
+{% block content %}
+{{ recipe::meta(base=\"None\", author=\"aleks\") }}
 
 This template allows you to run cron jobs with the `Schedule::Cron` Perl package. `mcron` can also be used, but `Schedule::Cron` leads to a faster build and a smaller result image.
 
@@ -48,3 +49,4 @@ $cron->run(detach=>0);
 #!/usr/bin/env bash
 echo Hello World!
 ```
+{% endblock content %}

@@ -1,7 +1,7 @@
 image: archlinux
 packages:
   - hut
-  - pixi
+  - mise
 
 oauth: pages.sr.ht/PAGES:RW
 environment:
@@ -11,10 +11,10 @@ environment:
 tasks:
   - build: |
       cd $repo
-      pixi run bun install
-      pixi run build
+      mise i
+      mise run build
   - package: |
-      cd $repo/_build/pages
+      cd $repo/_build
       tar -cvz . > ../../../site.tar.gz
   - upload: |
       hut pages publish -d $site site.tar.gz

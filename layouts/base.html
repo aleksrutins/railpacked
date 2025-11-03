@@ -10,10 +10,10 @@
             property="og:description"
             content="Find inspiration for your Railpack build configurations"
         />
-        <title>{{title}} | Railpack Cookbook</title>
+        <title>{% block title %}{% endblock title %} | Railpack Cookbook</title>
     </head>
     <body>
-        <slot></slot>
+        {% block page %}{% endblock page %}
         <footer>
             <hr />
             <p>

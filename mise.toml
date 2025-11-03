@@ -1,0 +1,7 @@
+[tools]
+bun = "latest"
+pandoc = "latest"
+"ubi:aleksrutins/ionian" = "0.1.2"
+
+[tasks]
+build = "ionian build"

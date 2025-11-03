@@ -1,5 +1,9 @@
-<extends template="layouts/base.html" title="Home"></extends>
+{% extends "layouts/base.html" %}
+{% import "macros/recipe.html" as recipe %}
 
+{% block title %}Home{% endblock title %}
+
+{% block page %}
 <main class="list">
     <h1>Railpack Cookbook</h1>
     <input id="searchBar" placeholder="Search" />
@@ -8,11 +12,9 @@
         class="list"
         style="flex-direction: row; flex-wrap: wrap; justify-content: stretch"
     >
-        <recipe-link recipe="mojolicious" title="Mojolicious">
-            A Perl web framework.
-        </recipe-link>
-        <recipe-link recipe="cron" title="Cron">
-            Run Cron jobs with Perl's <code>Schedule::Cron</code>.
-        </recipe-link>
+        {{recipe::link(recipe="mojolicious", title="Mojolicious", desc="A Perl web framework.")}}
+
+        {{recipe::link(recipe="cron", title="Cron", desc="Run Cron jobs with Perl's <code>Schedule::Cron</code>.")}}
     </div>
 </main>
+{% endblock page %}
