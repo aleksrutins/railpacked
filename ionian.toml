@@ -2,7 +2,7 @@
 name = "bundle"
 during = "PreBuild"
 dev = { Watch = ["src/**/*.ts"] }
-command = "bun build src/app.ts --production --outfile assets/app.bundle.js"
+command = "bun build src/app.ts --production --outfile assets/app.bundle.js > bundle.log"
 
 [[hooks]]
 name = "markdown-build"

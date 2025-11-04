@@ -5,3 +5,4 @@ _build/
 assets/*.bundle.*
 node_modules/
 pages/recipes/*.html
+bundle.log
