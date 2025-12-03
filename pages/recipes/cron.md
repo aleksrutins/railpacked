@@ -1,6 +1,6 @@
 {% block base %}Shell Script{% endblock base %}
 {% block author %}aleks{% endblock author %}
-{% block title %}Mojolicious{% endblock title %}
+{% block title %}Cron{% endblock title %}
 
 {% block content %}
 {{ recipe::meta(base=\"None\", author=\"aleks\") }}
